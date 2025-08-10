@@ -13,9 +13,9 @@ In urban households, greywater from showers and sinks is wasted daily. I wanted 
 
 
 ## Pictures
-![alt text](iiiii.jpg)
-![alt text](iii.jpg)
-![alt text](image.png)
+![alt text](assets/iiiii.jpg)
+![alt text](assets/iii.jpg)
+![alt text](assets/image.png)
 
 
 # Component List for Smart Water Treatment Unit
@@ -37,3 +37,4 @@ In urban households, greywater from showers and sinks is wasted daily. I wanted 
 | Turbidity Sensor                   | Water quality monitoring              | ~$21.1               | [Fut-Electronics](https://store.fut-electronics.com/products/copy-of-turbidity-sensor-water-suspended-particles-china) |
 
 **Total Estimated Cost: $300.5**
+
