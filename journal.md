@@ -78,12 +78,13 @@ I prepared the GitHub repository, ensured it included:
 
 ---
 **Media:**  
-![alt text](image.png)
-![alt text](iii.jpg)
-![alt text](iiiii.jpg)
+![alt text](assets/image.png)
+![alt text](assets/iii.jpg)
+![alt text](assets/iiiii.jpg)
 expected results:
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
+![alt text](assets/image-1.png)
+![alt text](assets/image-2.png)
+![alt text](assets/image-3.png)
 Measured voltage and current intensity of system components.:
-![alt text](image-4.png)
+![alt text](assets/image-4.png)
+
