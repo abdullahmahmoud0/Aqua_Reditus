@@ -78,13 +78,14 @@ I prepared the GitHub repository, ensured it included:
 
 ---
 **Media:**  
-![alt text](assets/image.png)
-![alt text](assets/iii.jpg)
-![alt text](assets/iiiii.jpg)
+![fully organized and colored 3d model](assets/image.png)
+![3d model](assets/iii.jpg)
+![3d model](assets/iiiii.jpg)
 expected results:
-![alt text](assets/image-1.png)
-![alt text](assets/image-2.png)
-![alt text](assets/image-3.png)
+![Measured TDS through treatment process](assets/image-1.png)
+![Measured pH through treatment process](assets/image-2.png)
+![Measured NTU(the turbidity) through treatment process](assets/image-3.png)
 Measured voltage and current intensity of system components.:
-![alt text](assets/image-4.png)
+![Measured voltage and current intensity of system components](assets/image-4.png)
+
 
