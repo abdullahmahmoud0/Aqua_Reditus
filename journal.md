@@ -13,7 +13,7 @@ created_at: "26-6-2025"
 **Date:** *26/6*  
 **Time Spent:** 6 hours  
 
-The idea for Aqua Reditus came to me after noticing how much greywater is wasted in everyday activities — from washing vegetables to rinsing dishes. I began thinking about ways to **recover and treat this water** on a small, personal scale. I wanted the system to be compact, easy to understand, and fully modular, so that each stage of treatment could be observed and studied individually.  
+The idea for Aqua Reditus came to me after noticing how much greywater is wasted in what my little sisters do everyday, from washing vegetables to rinsing dishes, cause they use much water for something that can be done with a little ammount of water. I began thinking about ways to **recover and treat this water** on a small, personal scale, and reuse it to reduce the water bill. I wanted the system to be compact, easy to understand, and fully modular, so that each stage of treatment could be observed and monitored for any age.  
 
 I spent several hours drafting the initial concept, imagining a multi-stage treatment process where each chamber would handle a specific type of purification: sedimentation for large debris, filtration for finer particles, activated carbon for chemical impurities, and UV disinfection for microbial safety. I also sketched preliminary flow diagrams, constantly asking myself, *If I were using this at home, how would it operate intuitively?*
 
@@ -31,7 +31,7 @@ I realized that proper sequencing and flow management are critical. For instance
 3. Fine mesh filtration for final polishing.  
 4. UV disinfection for microbial safety.  
 
-I documented expected performance metrics and simulated the flow patterns conceptually to make sure each stage could handle realistic household greywater volumes.
+I documented expected performance metrics and imagined the flow patterns conceptually to make sure each stage could handle realistic household greywater volumes.
 
 ---
 
@@ -43,7 +43,7 @@ Once the concept was solid, I focused on designing the **modular structure** of 
 
 I imagined the user experience in detail: sliding out the sedimentation chamber to empty it, swapping carbon cartridges easily, and having visible markers to indicate flow direction. I also paid attention to the **spatial relationships** between chambers so that water would naturally move from one stage to the next without requiring external pumping in the simulated model.  
 
-The system design became more than just functional; it was a **learning tool**, illustrating the logic of water purification in an intuitive way.
+The system design became more than just functional after this work.
 
 ![fully organized and colored 3d model](assets/image.png)  
 ![3d model](assets/iii.jpg)  
@@ -57,7 +57,7 @@ The system design became more than just functional; it was a **learning tool**, 
 
 I simulated water flow and treatment efficiency using conceptual models and calculations. I focused on flow rates, contact times, and the relative effectiveness of each stage. For example, I examined how much time water should remain in the carbon chamber to reduce chemical content effectively, or how long UV exposure would need to be to inactivate typical microbes.  
 
-During these days, I also created theoretical plots showing how **turbidity**, **pH**, and **contaminant levels** would change across each stage. Imagining the system in action was surprisingly satisfying — I could see the water gradually becoming cleaner, even though this existed only in simulations and calculations.
+During these days, I also created theoretical plots showing how **turbidity**, **pH**, and **contaminant levels** would change across each stage. Imagining the system in action was surprisingly satisfying, I could see the water gradually becoming cleaner, even though this existed only in simulations and calculations.
 
 ![Measured voltage and current intensity of system components](assets/image-4.png)  
 
@@ -76,7 +76,7 @@ I finalized all design documentation and created expected outcome graphs for the
 ![Measured pH through treatment process](assets/image-2.png)  
 ![Measured NTU (turbidity) through treatment process](assets/image-3.png)  
 
-The documentation included clear annotations of chamber function, expected performance, and conceptual flow diagrams. I also prepared a detailed **Bill of Materials** with all hypothetical components and their simulated purpose.
+I also prepared a detailed **Bill of Materials** with all components and their purpose.
 
 ---
 
@@ -84,8 +84,9 @@ The documentation included clear annotations of chamber function, expected perfo
 **Date:** *6/7*  
 **Time Spent:** 8 hours  
 
-The last day was for polishing the journal and repository. I reviewed every diagram, calculation, and image to ensure it told the full story of Aqua Reditus as a **conceptual and a Me project**.  
+The last day was for polishing the journal and repository. I reviewed every calculation, and image to ensure it told the full story of Aqua Reditus as a **Me project**.  
 
-Looking back, this project felt like more than an academic exercise — it was a journey of exploration. I learned not only about water treatment but also about **design thinking**, how to visualize complex processes, and how to anticipate problems before they happen. Aqua Reditus may exist only in simulations and models, but it represents a personal vision of sustainable water reuse that I hope to explore further in the future.
+Looking back, this project felt like more than an academic exercise, it was a journey of exploration. I learned not only about water treatment but also about **design thinking**, how to visualize complex processes, and how to anticipate problems before they happen. Aqua Reditus may exist only in simulations and models now, but it represents a personal vision of sustainable water reuse that I hope to explore further in the future and my house.
 
 ---
+
