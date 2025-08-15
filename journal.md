@@ -13,9 +13,9 @@ created_at: "26-6-2025"
 **Date:** *26/6*  
 **Time Spent:** 6 hours  
 
-The whole idea started over a casual lunch when I noticed how much water we waste in our home without thinking twice. Washing vegetables, cleaning rice, even rinsing dishes — all that water just swirls away down the drain, never to be used again. It made me wonder how much of it could be reused if we treated it properly. That small observation snowballed into a bigger thought: what if we had a **personal-sized wastewater treatment unit** that could sit quietly in a corner, do its job, and help us recycle greywater for non-drinking purposes?  
+The idea for Aqua Reditus came to me after noticing how much greywater is wasted in everyday activities — from washing vegetables to rinsing dishes. I began thinking about ways to **recover and treat this water** on a small, personal scale. I wanted the system to be compact, easy to understand, and fully modular, so that each stage of treatment could be observed and studied individually.  
 
-I sat at my desk and began scribbling ideas in my notebook. I wanted something that was modular and easy to service, not one of those big industrial boxes that people are afraid to touch. My mind kept returning to a four-stage system: sedimentation to let the big stuff settle, a gravel/sand filter for smaller particles, activated carbon to handle smells and chemicals, and finally, UV sterilization to eliminate bacteria. I sketched it out like a flow diagram, imagining each chamber as a self-contained block that could be slid in and out for cleaning. The name came to me almost instantly — *Aqua Reditus*, meaning "water return." It felt right, like the project already had a personality.
+I spent several hours drafting the initial concept, imagining a multi-stage treatment process where each chamber would handle a specific type of purification: sedimentation for large debris, filtration for finer particles, activated carbon for chemical impurities, and UV disinfection for microbial safety. I also sketched preliminary flow diagrams, constantly asking myself, *If I were using this at home, how would it operate intuitively?*
 
 ---
 
@@ -23,23 +23,27 @@ I sat at my desk and began scribbling ideas in my notebook. I wanted something t
 **Date:** *27/6–28/6*  
 **Time Spent:** 10 hours  
 
-The next two days were basically me buried in articles, PDFs, and YouTube rabbit holes about small-scale water purification. I was surprised by how much of this technology is centuries old — gravel filtration has been around since ancient times — yet still highly effective when combined with modern methods like UV LEDs.  
+The next two days were devoted entirely to research. I studied multiple examples of compact wastewater treatment systems used in both urban and rural contexts, focusing on **effective multi-stage filtration methods**. I read about sedimentation efficiency, particle capture in sand and gravel layers, activated carbon absorption rates, and UV exposure times for microbial inactivation.  
 
-One thing I quickly learned was that order and proportion are everything. If the gravel filter is too fine, water flow slows to a trickle. If the UV chamber is too short, microbes survive the pass. I kept imagining a family using this unit daily — it had to work without babysitting.  
+I realized that proper sequencing and flow management are critical. For instance, if sedimentation isn’t efficient, downstream filters would clog quickly. I also explored how different chemicals or media might interact with greywater contaminants. By the end of these days, I had refined my treatment path:
+1. Gravel and sand filtration for mechanical removal.  
+2. Activated carbon absorption for chemical contaminants.  
+3. Fine mesh filtration for final polishing.  
+4. UV disinfection for microbial safety.  
 
-By the end of the research phase, I had locked in my treatment path: start with **gravel and sand filtration**, then move to **activated carbon absorption**, follow with **fine mesh polishing**, and finish with **UV LED disinfection**. Each stage served a purpose, and all together they made a complete loop from dirty to safe. I also wrote down rough dimensions for each chamber, keeping in mind that I’d need enough room for sensors and maintenance access.
+I documented expected performance metrics and simulated the flow patterns conceptually to make sure each stage could handle realistic household greywater volumes.
 
 ---
 
-## Day 4–6: CAD Design (Chamber Modeling)  
+## Day 4–6: Design of the Modular System  
 **Date:** *29/6–1/7*  
 **Time Spent:** 15 hours  
 
-This was the creative phase — translating all the research and scribbles into a tangible 3D model in Fusion 360. I started with the outer casing, wanting it to feel modern and minimal, something that wouldn’t look out of place next to a kitchen appliance or a garden water tank. Then I began building the internal chambers, each with its own mounting points, flow paths, and access hatches.  
+Once the concept was solid, I focused on designing the **modular structure** of the system. I worked on chamber arrangements, flow pathways, and the accessibility of each section. A major priority was that each chamber could be “removed” conceptually for maintenance or inspection, without disrupting the rest of the system.  
 
-I decided to **color-code** the chambers so that even someone unfamiliar with the system could instantly understand the process: blue for sedimentation, yellow for sand/gravel, black for carbon, and purple for UV. I imagined opening the unit and being able to tell at a glance which stage needed attention.  
+I imagined the user experience in detail: sliding out the sedimentation chamber to empty it, swapping carbon cartridges easily, and having visible markers to indicate flow direction. I also paid attention to the **spatial relationships** between chambers so that water would naturally move from one stage to the next without requiring external pumping in the simulated model.  
 
-Every time I completed a section, I would rotate the model and think, *If I were actually holding this, could I clean it? Could I replace this filter without pulling the whole thing apart?* That constant mental check kept the design grounded in practicality instead of just looking pretty on screen.  
+The system design became more than just functional; it was a **learning tool**, illustrating the logic of water purification in an intuitive way.
 
 ![fully organized and colored 3d model](assets/image.png)  
 ![3d model](assets/iii.jpg)  
@@ -47,42 +51,41 @@ Every time I completed a section, I would rotate the model and think, *If I were
 
 ---
 
-## Day 7–8: Electronics + Sensor Integration  
+## Day 7–8: Conceptual Simulation and Flow Analysis  
 **Date:** *2/7–3/7*  
 **Time Spent:** 10 hours  
 
-With the physical model taking shape, I moved to the electronics that would make it "smart." I chose an **Arduino Mega** because I knew I’d be connecting multiple sensors and didn’t want to run out of pins halfway through. The plan was simple: the sensors would collect data, the Arduino would process it, and the system would respond automatically.  
+I simulated water flow and treatment efficiency using conceptual models and calculations. I focused on flow rates, contact times, and the relative effectiveness of each stage. For example, I examined how much time water should remain in the carbon chamber to reduce chemical content effectively, or how long UV exposure would need to be to inactivate typical microbes.  
 
-I wired up a **turbidity sensor** to measure water clarity, a **flow sensor** to detect when water was moving through the system, and a small array of **UV LED drivers** that could be switched on and off depending on the readings. The firmware I wrote kept an eye on the numbers — if the turbidity rose above a certain threshold, it would trigger a buzzer and LED alert.  
-
-I can’t lie, there were a couple of frustrating moments here. At one point, I accidentally swapped the wiring on the UV driver and thought I had burned out the entire board. Thankfully, it turned out to just be a loose jumper wire. Once the system was stable, I transferred it from the breadboard to a **custom PCB**, which felt like moving from a prototype into something that could be installed and forgotten.  
+During these days, I also created theoretical plots showing how **turbidity**, **pH**, and **contaminant levels** would change across each stage. Imagining the system in action was surprisingly satisfying — I could see the water gradually becoming cleaner, even though this existed only in simulations and calculations.
 
 ![Measured voltage and current intensity of system components](assets/image-4.png)  
 
 ---
 
-## Day 9–10: BOM, Testing, and Documentation  
+## Day 9–10: Documentation and Expected Results  
 **Date:** *4/7–5/7*  
 **Time Spent:** 11 hours  
 
-Testing day was honestly the most satisfying part. I filled a container with murky water — a mix of kitchen rinse water and some added dust for realism — and ran it through the system in stages. Watching the turbidity drop with each chamber felt like watching a slow-motion magic trick.  
-
-I tracked the **TDS (Total Dissolved Solids)** and **pH** using simple handheld meters, and as expected, the carbon stage had the most dramatic effect on chemical content while the UV stage ensured bacteria wouldn’t survive. The **turbidity** reading after the final mesh filter and UV stage was nearly crystal-clear.  
+I finalized all design documentation and created expected outcome graphs for the system. These included:
+- **TDS reduction** through sedimentation, filtration, and carbon absorption.  
+- **pH stabilization** after treatment.  
+- **Turbidity reduction**, illustrating the clarity improvement from start to finish.  
 
 ![Measured TDS through treatment process](assets/image-1.png)  
 ![Measured pH through treatment process](assets/image-2.png)  
 ![Measured NTU (turbidity) through treatment process](assets/image-3.png)  
 
-Once I had the numbers, I spent hours creating a clean **Bill of Materials (BOM)** with prices and sourcing links. I also took annotated screenshots of the CAD design, drew up wiring diagrams, and made sure that if someone else ever wanted to replicate this, they’d have a complete guide.
+The documentation included clear annotations of chamber function, expected performance, and conceptual flow diagrams. I also prepared a detailed **Bill of Materials** with all hypothetical components and their simulated purpose.
 
 ---
 
-## Final Touches and Polish  
+## Final Touches and Reflection  
 **Date:** *6/7*  
 **Time Spent:** 8 hours  
 
-The last day was all about presentation. I uploaded everything to a neatly organized GitHub repository — CAD files, wiring diagrams, BOM, journal, and even the test result graphs. It wasn’t just about showing off the work, but about making it easy for anyone to take the idea and build on it.  
+The last day was for polishing the journal and repository. I reviewed every diagram, calculation, and image to ensure it told the full story of Aqua Reditus as a **conceptual and a Me project**.  
 
-When I looked back at the first sketch from Day 1 and compared it to the final renders, I realized how much the project had evolved. What started as a quick “what if” idea had turned into a complete, functional concept with a clear purpose. *Aqua Reditus* might just be a model for now, but it’s ready for the day it becomes a real, working device.
+Looking back, this project felt like more than an academic exercise — it was a journey of exploration. I learned not only about water treatment but also about **design thinking**, how to visualize complex processes, and how to anticipate problems before they happen. Aqua Reditus may exist only in simulations and models, but it represents a personal vision of sustainable water reuse that I hope to explore further in the future.
 
 ---
