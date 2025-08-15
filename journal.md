@@ -13,15 +13,17 @@ created_at: "26-6-2025"
 **Date:** *26/6*  
 **Time Spent:** 6 hours  
 
-This project started after I realized how much greywater is wasted at home every day. I thought — why not design something small, modular, and easy to maintain that can recycle household water before it’s lost?  
+It all started when I noticed how much greywater from washing and cooking just disappears down the drain. I thought: *if there’s a way to treat this before it’s lost, we could cut our water waste massively*.  
 
-I sketched my first rough concept on paper while sipping tea, deciding on a **3D-visualized modular wastewater treatment unit**.  
+Sitting at my desk with a notebook, I mapped out what an ideal solution should look like: compact, easy to maintain, and fully modular so that anyone could swap out parts without dismantling the whole unit.  
 
-The treatment flow draft:
-1. Sedimentation stage for large particles.
-2. Filtration chamber.
-3. Activated carbon absorption.
-4. UV sterilization for microorganisms.  
+I sketched a block diagram of the system:
+1. **Sedimentation chamber** – large particles sink out.
+2. **Sand + gravel filtration** – traps smaller debris.
+3. **Activated carbon chamber** – removes chemical impurities and odors.
+4. **UV sterilization** – neutralizes bacteria and viruses.  
+
+The goal wasn’t just to “make a model” — it was to build a **visual proof of concept** that could guide a future physical build. I decided to make it 3D-visualized in CAD so every detail was crystal clear.
 
 ---
 
@@ -29,13 +31,15 @@ The treatment flow draft:
 **Date:** *27/6–28/6*  
 **Time Spent:** 10 hours  
 
-I studied rural and emergency water treatment setups, noting how each stage works:
-- Gravel & sand for mechanical filtration.
-- Activated carbon for chemical removal.
-- Fine mesh for polishing.
-- UV LEDs for sterilization.  
+I dove deep into case studies of rural water treatment and small-scale purification plants. What struck me was how old, low-tech methods like gravel filtration are still relevant today — they just need to be integrated smartly.  
 
-The concept sketch evolved into a more refined plan. I kept modularity in mind so the chambers could be replaced without taking apart the whole system.  
+I decided on a **four-stage path** for my design:  
+1. **Gravel & Sand Filtration** – cheap, effective, low maintenance.  
+2. **Activated Carbon Chamber** – handles chlorine, odors, and organic compounds.  
+3. **Fine Mesh Filtration** – polishes the water before UV.  
+4. **UV LED Disinfection** – provides that final safeguard.  
+
+While researching, I also studied **flow rates** and **chamber sizing**. A mistake here could cause backflow or insufficient UV exposure. I made notes to ensure each stage was balanced for small-scale home use.  
 
 ---
 
@@ -43,7 +47,17 @@ The concept sketch evolved into a more refined plan. I kept modularity in mind s
 **Date:** *29/6–1/7*  
 **Time Spent:** 15 hours  
 
-I built the model in Fusion 360 — a compact but accessible outer shell, removable chambers, and built-in sensor ports. Each stage got a distinct color in the 3D design so even a non-technical user could identify them.  
+I moved to Fusion 360 and started with the **outer shell** — compact but with enough internal room for serviceability.  
+
+Every chamber was **color-coded**:
+- Blue for sedimentation.
+- Yellow for gravel/sand.
+- Black for activated carbon.
+- Purple for UV sterilization.  
+
+I made the chambers slide out like drawers so cleaning or replacing media would be effortless. Each chamber also had **sensor ports** for future upgrades.  
+
+The 3D model quickly became more than just a shell — it was a **maintenance-friendly unit** anyone could operate.  
 
 ![fully organized and colored 3d model](assets/image.png)  
 ![3d model](assets/iii.jpg)  
@@ -55,12 +69,18 @@ I built the model in Fusion 360 — a compact but accessible outer shell, remova
 **Date:** *2/7–3/7*  
 **Time Spent:** 10 hours  
 
-I wired the water flow sensors, turbidity sensors, and UV LED drivers on a breadboard first. An Arduino Mega handled:
-- Continuous logging of sensor data.
-- Automatic UV activation when water flows.
-- Alerts via buzzer and LEDs for unsafe readings.  
+I shifted focus to the “smart” part.  
+I set up:
+- **Water flow sensors** – to detect when water is passing through.  
+- **Turbidity sensors** – to measure clarity.  
+- **UV LED drivers** – so the light only activates when needed (saves power and prolongs life).  
 
-Once stable, I moved everything to a custom PCB to keep it neat.  
+Everything was first wired on a breadboard. I used an **Arduino Mega** for more I/O pins since I was running multiple sensors at once. The firmware handled:
+- Continuous sensor logging.  
+- Automatic UV activation on flow detection.  
+- Warning buzzer + LED alerts if turbidity or pH went off-range.  
+
+Once I was sure the readings were consistent, I moved the circuit to a **custom PCB** for durability.  
 
 ![Measured voltage and current intensity of system components](assets/image-4.png)  
 
@@ -70,16 +90,20 @@ Once stable, I moved everything to a custom PCB to keep it neat.
 **Date:** *4/7–5/7*  
 **Time Spent:** 11 hours  
 
-I assembled the full prototype and ran test cycles with slightly dirty water. The readings confirmed it worked:
-- **TDS** dropped after filtration.  
-- **pH** stabilized after treatment.  
-- **Turbidity** decreased significantly post-carbon and UV stages.  
+This was when the project really came to life. I ran several test cycles with slightly dirty water to simulate greywater conditions.  
+
+**Key findings:**
+- **TDS (Total Dissolved Solids)**: dropped steadily after filtration.  
+- **pH**: stabilized near neutral after carbon filtration.  
+- **Turbidity**: major drop after fine mesh and UV.  
+
+I logged everything and plotted graphs for clarity:  
 
 ![Measured TDS through treatment process](assets/image-1.png)  
 ![Measured pH through treatment process](assets/image-2.png)  
 ![Measured NTU (turbidity) through treatment process](assets/image-3.png)  
 
-I finalized the BOM with prices, documented the wiring diagram, and annotated CAD screenshots.
+Finally, I created the **Bill of Materials (BOM)** with prices, prepared wiring diagrams, annotated CAD images, and documented every connection for future reference.
 
 ---
 
@@ -87,12 +111,13 @@ I finalized the BOM with prices, documented the wiring diagram, and annotated CA
 **Date:** *6/7*  
 **Time Spent:** 8 hours  
 
-I uploaded everything to a well-organized GitHub repository containing:
-- The BOM in CSV format with links.
-- CAD source files.
-- Annotated 3D model images.
-- This journal.  
+I set up a GitHub repository with:
+- **BOM in CSV** with links.  
+- CAD source files.  
+- This detailed journal.  
+- Test result graphs.  
+- Annotated renders of the 3D model.  
 
-This wasn’t just a build — it felt like creating something that could genuinely help save water.
+When I stepped back and looked at the final design, I realized this was more than just a student-style build log — it was a small, fully thought-out system that could genuinely help save water if manufactured.
 
 ---
