@@ -1,7 +1,7 @@
 ---
 title: "Aqua Reditus"
 author: "Abdullah Mahmoud"
-description: "A smart and compact wastewater treatment unit with a 3D visualization design."
+description: "A smart and compact wastewater treatment unit to reuse the water my sisters waste."
 created_at: "26-6-2025"
 ---
 
@@ -89,3 +89,4 @@ Polishing the journal and repository was to be done on the final day. I re-read 
 Retrospectively, this project was about something more than just an exercise in academic work, it was an exploratory adventure. Not only did I learn how to treat water, but also the concept of **design thinking**, how to visualize a complicated process, and how to be able to foresee a problem before it occurs. Aqua Reditus might still remain only a simulation and model now, but it is a personal dream of sustainable use of water reuse, which I want to pursue in future, and my house.
 
 ---
+
